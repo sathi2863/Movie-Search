@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300">
+    <div class="px-4 py-3 justify-center text-center border border-gray-700 rounded-2xl m-4">
+        <button 
+        id="themeBtn"
+        class="bg-gray-600 text-white m-3 px-4 py-2 rounded-full shadow-lg fixed top-4 right-4 hover:bg-gray-500">
+        <i data-lucide="moon"></i> 
+        </button>
+        <h1 class="mb-2.5 text-2xl">Movie Search App</h1>
+
+        <div class="flex gap-2 m-5">
+
+        <input 
+        type="text" 
+        id="search" 
+        placeholder="search movie"
+        class="border border-gray-700 px-4 h-12 w-full rounded-md focus:outline-none focus:border-green-600 dark:text-white"
+        >
+
+        <button  
+        class="border border-gray-700  h-12 w-12 flex items-center justify-center rounded-md bg-white hover:bg-gray-400 transition duration-300 dark:bg-gray-700" 
+        onclick="getMovie()">
+        <i data-lucide="search" class="w-6 h-5 "></i> 
+        </button>
+        </div>
+
+
+        <div id="movie" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+        </div>
+    </div>
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+lucide.createIcons();
+</script>
+   
+<script src="script.js"></script>
+</body>
+</html>
